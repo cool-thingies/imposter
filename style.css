@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  user-select: none;
 }
 
 #setup-screen {
@@ -53,6 +54,7 @@ input[type="number"] {
   color: #fff;
   border: 2px solid #222;
   border-radius: 0;
+  user-select: text;
 }
 
 textarea {
@@ -66,6 +68,7 @@ textarea {
   color: #fff;
   border: 2px solid #222;
   border-radius: 0;
+  user-select: text;
 }
 
 button {
