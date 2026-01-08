@@ -1,0 +1,142 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#setup-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 20px;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 90%;
+  max-width: 500px;
+  justify-content: space-between;
+}
+
+label {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+input[type="number"] {
+  width: 90px;
+  padding: 12px;
+  font-size: 1.1em;
+  background: #0b0b0b;
+  color: #fff;
+  border: 2px solid #222;
+  border-radius: 0;
+}
+
+textarea {
+  width: 90%;
+  max-width: 500px;
+  resize: vertical;
+  min-height: 200px;
+  padding: 12px;
+  font-size: 1.1em;
+  background: #0b0b0b;
+  color: #fff;
+  border: 2px solid #222;
+  border-radius: 0;
+}
+
+button {
+  background: #2f6bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.3em;
+  border-radius: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+button:active {
+  background: #1f4ad6;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#player-screen {
+  width: 100%;
+}
+
+#reveal-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+}
+
+#role-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#reveal-text {
+  font-size: 3em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.accent-red {
+  color: #ff4444;
+}
+
+#reveal-text.reveal-imposter {
+  color: #ff4444;
+}
+
+#reveal-text.reveal-word {
+  color: #ffffff;
+}
+
+#button-slot {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#button-slot button {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

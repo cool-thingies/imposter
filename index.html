@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imposter Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#000000" />
+</head>
+<body>
+  <div id="setup-screen">
+    <h1><span class="accent-red">Imposter</span> Game</h1>
+    
+    <div class="field-row">
+      <label for="player-count">Number of players:</label>
+      <input type="number" id="player-count" min="3" value="4" />
+    </div>
+    
+    <div class="field-row">
+      <label for="imposter-count">Number of imposters:</label>
+      <input type="number" id="imposter-count" min="1" value="1" />
+    </div>
+    
+    <label for="word-list">Enter words/phrases (one per line):</label>
+    <textarea id="word-list" rows="10">variable
+coefficient
+constant
+expression
+equation
+inequality
+linear function
+slope
+y-intercept
+distributive property
+quadratic
+function
+domain
+range
+point
+line
+plane
+angle
+triangle
+congruent
+similar
+perimeter
+area
+volume
+Pythagorean theorem
+circumference
+area
+triangle inequality
+parallel
+perpendicular
+midpoint
+distance
+polynomial
+factoring
+zero
+vertex
+exponential
+logarithm
+rational
+complex
+discriminant
+imaginary
+arithmetic sequence
+geometric sequence
+matrix
+determinant
+absolute value
+inverse
+unit circle
+trigonometry
+radian
+amplitude
+period
+asymptote
+sequence
+series
+law of sines
+law of cosines
+limit
+binomial
+pi</textarea>
+    
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <div id="player-screen" class="hidden">
+    <h2 id="player-prompt">Player 1</h2>
+    <div id="reveal-slot">
+      <div id="role-display">
+        <h1 id="reveal-text" class="invisible"></h1>
+      </div>
+    </div>
+    <div id="button-slot">
+      <button id="reveal-button">I'm ready</button>
+      <button id="got-it" class="invisible">Got it</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
